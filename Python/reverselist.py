@@ -7,5 +7,6 @@ mylist1.reverse()  # Reverse the list in place
 print("Reversed list 2:", mylist1)
 
 mylist2 = [6, 7, 8, 9, 10]
-reverserlist2 = list(reversed(mylist2))  # Reverse the list using the reversed() function
+# Reverse the list using the reversed() function
+reverserlist2 = list(reversed(mylist2))
 print("Reversed list 3:", reverserlist2)

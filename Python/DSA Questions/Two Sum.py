@@ -14,22 +14,24 @@ Example 2:
 Input: nums = [3,2,4], target = 6
 Output: [1,2]'''
 
-lst = [1,2,3,4,5,6]
+lst = [1, 2, 3, 4, 5, 6]
 target = 9
 
 for i in range(len(lst)):
     for j in range(i+1, len(lst)):
         if lst[i] + lst[j] == target:
             print(i, j)
-            
+
+
 def twosum(target, lst):
     lst2 = []
     for i in range(len(lst)):
         for j in range(i+1, len(lst)):
             if lst[i] + lst[j] == target:
-                lst2.append([i,j])
+                lst2.append([i, j])
     return lst2
 
-lst = [1,2,3,4,5,6]
+
+lst = [1, 2, 3, 4, 5, 6]
 target = 9
 print("Indices of two sum:", twosum(target, lst))

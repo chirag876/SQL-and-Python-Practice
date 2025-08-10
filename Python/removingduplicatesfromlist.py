@@ -9,6 +9,4 @@ result2 = []
 for item in mylist2:
     if item not in result2:
         result2.append(item)  # Append only unique items
-print("List after removing duplicates while preserving order:", result2)    
-
-
+print("List after removing duplicates while preserving order:", result2)

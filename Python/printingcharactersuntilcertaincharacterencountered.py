@@ -3,4 +3,3 @@ for char in s:
     if char == 'C':
         break
     print(char, end="")
-    

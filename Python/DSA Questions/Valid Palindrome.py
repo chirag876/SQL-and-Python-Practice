@@ -10,5 +10,5 @@ Explanation: "amanaplanacanalpanama" is a palindrome.'''
 
 s = "A man, a plan, a canal: Panama"
 s2 = "".join(char.lower() for char in s if char.isalnum())
-isvalidpalindrome = s2==s2[::-1]
+isvalidpalindrome = s2 == s2[::-1]
 print(isvalidpalindrome)

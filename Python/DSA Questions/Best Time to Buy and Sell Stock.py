@@ -14,16 +14,17 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 
 def maxstocksprofit(prices):
     maxprof = 0
-    minprice = float('inf') # Start with a very large value
-    
+    minprice = float('inf')  # Start with a very large value
+
     for prc in prices:
-        if prc <minprice: # Keep track of the minimum price seen so far
+        if prc < minprice:  # Keep track of the minimum price seen so far
             minprice = prc
-        profit = prc-minprice # Calculate profit if selling today
-        
-        if profit>maxprof: # Update max profit
-          maxprof = profit
+        profit = prc-minprice  # Calculate profit if selling today
+
+        if profit > maxprof:  # Update max profit
+            maxprof = profit
     return maxprof
 
-prices = [7,1,5,3,6,4]
+
+prices = [7, 1, 5, 3, 6, 4]
 print("max profit:", maxstocksprofit(prices))

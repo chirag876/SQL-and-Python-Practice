@@ -4,12 +4,15 @@ Useful when you want to track function behavior without using global variables o
 """
 
 # Define the function
+
+
 def my_function():
     # Increase the count each time the function is called
     my_function.count += 1
 
     # Print a message showing how many times the function has been called
     print(f"my_function has been called {my_function.count} times.")
+
 
 # Attach a custom attribute to the function
 my_function.count = 0  # Initializing count

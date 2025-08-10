@@ -1,4 +1,4 @@
-heightofpyramid = 5 
+heightofpyramid = 5
 spaces = " "
 stars = "*"
 for i in range(1, heightofpyramid+1):

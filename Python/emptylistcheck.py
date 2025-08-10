@@ -5,16 +5,16 @@
 list1 = []
 if len(list1) == 0:
     print("The list is empty:", list1)
-    
+
 # You can also check if the list is empty using the not operator
 if not list1:
     print("The list is empty:", list1)
 
-# You can use the any() function in combination with a list comprehension to check if any elements meet a specific condition. In this case, you can check if there are any elements in the list. 
+# You can use the any() function in combination with a list comprehension to check if any elements meet a specific condition. In this case, you can check if there are any elements in the list.
 if not any(list1):
     print("The list is empty:", list1)
-    
-empty_list = [result for result in list1 if result==[]]
+
+empty_list = [result for result in list1 if result == []]
 print("Empty list check using list comprehension 1:", empty_list)
 
 empty_list2 = [result for result in list1 if not result]

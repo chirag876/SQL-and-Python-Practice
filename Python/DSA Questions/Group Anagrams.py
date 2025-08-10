@@ -27,9 +27,10 @@ def groupanagrams(strs):
                 item.append(char)
                 placed = True
                 break
-        if not placed: # if no existing group match create a new one
+        if not placed:  # if no existing group match create a new one
             lst2.append([char])
     return lst2
 
-strs = ["eat","tea","tan","ate","nat","bat"]
+
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print("Group anagrams:", groupanagrams(strs))

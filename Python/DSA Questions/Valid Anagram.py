@@ -9,14 +9,16 @@ Output: true'''
 # s = "anagram"
 # t = "nagaram"
 
-def anagramcheck(s,t):
-    if len(s)!=len(t): # if length differ they can't be anagrams
+
+def anagramcheck(s, t):
+    if len(s) != len(t):  # if length differ they can't be anagrams
         return False
-   
-    if sorted(s)==sorted(t): # convert both string into sorted list of characters
-       return True
+
+    if sorted(s) == sorted(t):  # convert both string into sorted list of characters
+        return True
     return False
+
 
 s = "anagram"
 t = "nagaram"
-print(anagramcheck(s,t))
+print(anagramcheck(s, t))

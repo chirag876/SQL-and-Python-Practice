@@ -1,4 +1,4 @@
-#------------------------------------------------- Shallow Copy Example ---------------------------------
+# ------------------------------------------------- Shallow Copy Example ---------------------------------
 import copy
 
 # Create a list with some sample data
@@ -12,7 +12,7 @@ print("Original list:", original_list)
 print("Shallow copied list:", copied_list)
 
 
-#--------------------------------- Deep Copy Example ---------------------------------
+# --------------------------------- Deep Copy Example ---------------------------------
 original_list2 = [1, 2, 3, [4, 5]]
 # Create a deep copy of the list
 deep_copied_list = copy.deepcopy(original_list2)

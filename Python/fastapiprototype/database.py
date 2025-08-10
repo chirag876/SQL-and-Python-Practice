@@ -8,10 +8,11 @@ sessionlocal = sessionmaker(autoflush=False, autocommit=False, bind=engine)
 
 Base = declarative_base()
 # Dependency injection for db session
+
+
 def get_db():
     db = sessionlocal()
     try:
         yield db
     finally:
         db.close()
-        
