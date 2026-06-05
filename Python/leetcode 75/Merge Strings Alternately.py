@@ -20,3 +20,5 @@ def merge_alternately(word1, word2):
         result += word1[i+1:]
     result += word2[i+1:]
     return result
+
+"""Approach: Two Pointers, checked the length of the strings and added the remaining characters to the result string. Time complexity is O(n) where n is the length of the longer string."""
