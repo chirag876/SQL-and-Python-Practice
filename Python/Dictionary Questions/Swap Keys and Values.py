@@ -7,13 +7,13 @@ Output: {1: 'a', 2: 'b', 3: 'c'}
 '''
 
 
-def swappingdictkeyvalue(dict):
+def swap_dict_key_value(dict1):
     dict2 = {}
 
-    for key, value in dict.items():
+    for key, value in dict1.items():
         dict2[value] = key
     return dict2
 
 
 dict1 = {'a': 1, 'b': 2, 'c': 3}
-print(swappingdictkeyvalue(dict1))
+print(swap_dict_key_value(dict1))
